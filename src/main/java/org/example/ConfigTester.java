@@ -7,6 +7,7 @@ import java.awt.print.Book;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Map;
 
 public class ConfigTester {
     public static void main(String[] args) {
@@ -17,11 +18,13 @@ public class ConfigTester {
             // create a reader
             Reader reader = Files.newBufferedReader(Paths.get("config.json"));
 
-            // convert a JSON string to a Book object
-            Book book = gson.fromJson(reader, Book.class);
+            // convert JSON file to map
+            Map<?, ?> map = gson.fromJson(reader, Map.class);
 
-            // print book
-            System.out.println(book);
+            // print map entries
+            for (Map.Entry<?, ?> entry : map.entrySet()) {
+                System.out.println(entry.getKey() + "=" + entry.getValue());
+            }
 
             // close reader
             reader.close();
