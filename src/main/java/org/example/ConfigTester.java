@@ -11,26 +11,57 @@ import java.util.Map;
 
 public class ConfigTester {
     public static void main(String[] args) {
-        try {
-            // create Gson instance
-            Gson gson = new Gson();
+//        public static void void {
+        Student student = new Student();
+        student.setRollNo(1);
+        Student.Name name = student.new Name();
 
-            // create a reader
-            Reader reader = Files.newBufferedReader(Paths.get("config.json"));
+        name.firstName = "Mahesh";
+        name.lastName = "Kumar";
+        student.setName(name);
+        Gson gson = new Gson();
 
-            // convert JSON file to map
-            Map<?, ?> map = gson.fromJson(reader, Map.class);
+        String jsonString = gson.toJson(student);
+        System.out.println(jsonString);
+        student = gson.fromJson(jsonString, Student.class);
 
-            // print map entries
-            for (Map.Entry<?, ?> entry : map.entrySet()) {
-                System.out.println(entry.getKey() + "=" + entry.getValue());
-            }
+        System.out.println("Roll No: "+ student.getRollNo());
+        System.out.println("First Name: "+ student.getName().firstName);
+        System.out.println("Last Name: "+ student.getName().lastName);
 
-            // close reader
-            reader.close();
+        String nameString = gson.toJson(name);
+        System.out.println(nameString);
 
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+        name = gson.fromJson(nameString,Student.Name.class);
+        System.out.println(name.getClass());
+        System.out.println("First Name: "+ name.firstName);
+        System.out.println("Last Name: "+ name.lastName);
+    }
+
+}
+
+class Student {
+    private int rollNo;
+    private Name name;
+
+    public int getRollNo() {
+        return rollNo;
+    }
+
+    public void setRollNo(int rollNo) {
+        this.rollNo = rollNo;
+    }
+
+    public Name getName() {
+        return name;
+    }
+
+    public void setName(Name name) {
+        this.name = name;
+    }
+
+    class Name {
+        public String firstName;
+        public String lastName;
     }
 }
