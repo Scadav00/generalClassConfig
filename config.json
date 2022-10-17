@@ -24,6 +24,7 @@
     }
   },
   "nas": {
+    "test": "testing",
     "host": "",
     "port": "5000",
     "user": "",
