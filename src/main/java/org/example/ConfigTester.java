@@ -11,57 +11,44 @@ import java.util.Map;
 
 public class ConfigTester {
     public static void main(String[] args) {
-//        public static void void {
-        Student student = new Student();
-        student.setRollNo(1);
-        Student.Name name = student.new Name();
+        System.out.println("Welcome to Gson!");
 
-        name.firstName = "Mahesh";
-        name.lastName = "Kumar";
-        student.setName(name);
+        serializeConfigSimple();
+//        deserializeConfigSimple();
+    }
+
+    private static void serializeConfigSimple() {
+        Plotly plotly = new Plotly(
+                "0.0.0.0",
+                8051,
+                true,
+                "KBA- dashboard"
+        );
+
         Gson gson = new Gson();
+        String json = gson.toJson(plotly);
+    }
 
-        String jsonString = gson.toJson(student);
-        System.out.println(jsonString);
-        student = gson.fromJson(jsonString, Student.class);
+    private static void deserializeConfigSimple(){
+        String userJson = "{'host':'0.0.0.0','port':8051,'debug':true,'title':'KBA - Dashboard'}";
 
-        System.out.println("Roll No: "+ student.getRollNo());
-        System.out.println("First Name: "+ student.getName().firstName);
-        System.out.println("Last Name: "+ student.getName().lastName);
+        Gson gson = new Gson();
+        String json = gson.toJson(userJson);
 
-        String nameString = gson.toJson(name);
-        System.out.println(nameString);
-
-        name = gson.fromJson(nameString,Student.Name.class);
-        System.out.println(name.getClass());
-        System.out.println("First Name: "+ name.firstName);
-        System.out.println("Last Name: "+ name.lastName);
     }
 
 }
 
-class Student {
-    private int rollNo;
-    private Name name;
+class Plotly {
+    private String host;
+    private int port;
+    private boolean debug;
+    private String title;
 
-    public int getRollNo() {
-        return rollNo;
-    }
-
-    public void setRollNo(int rollNo) {
-        this.rollNo = rollNo;
-    }
-
-    public Name getName() {
-        return name;
-    }
-
-    public void setName(Name name) {
-        this.name = name;
-    }
-
-    class Name {
-        public String firstName;
-        public String lastName;
+    public Plotly(String host, int port, boolean debug, String title) {
+        this.host = host;
+        this.port = port;
+        this.debug = debug;
+        this.title = title;
     }
 }
