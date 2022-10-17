@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa21450-c174-4cc6-9d13-898f271f9632" name="Changes" comment="Gson dependency added, maven project set up">
+    <list default="true" id="bfa21450-c174-4cc6-9d13-898f271f9632" name="Changes" comment="added config.json">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ConfigTester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +38,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/ds/IdeaProjects/GsonConfig",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -51,7 +57,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665736787223</updated>
-      <workItem from="1665736789026" duration="1958000" />
+      <workItem from="1665736789026" duration="5541000" />
+      <workItem from="1665743250900" duration="3547000" />
+      <workItem from="1665751050497" duration="521000" />
+      <workItem from="1665757434882" duration="1645000" />
     </task>
     <task id="LOCAL-00001" summary="Gson dependency added, maven project set up">
       <created>1665737557088</created>
@@ -67,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665737842849</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added config.json">
+      <created>1665739030488</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665739030488</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +102,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Gson dependency added, maven project set up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gson dependency added, maven project set up" />
+    <MESSAGE value="added config.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="added config.json" />
   </component>
 </project>
