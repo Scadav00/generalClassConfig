@@ -71,23 +71,27 @@ class Plotly {
         this.title = title;
     }
 
-    public String getHost() {
-        return host;
-    }
+    public String toString() {
+        return "Plotly [ host: "+host+", port: "+ port+ ", debug: "+debug+ ",title: "+title+" ]";
+        }
 
-    public int getPort() {
-        return port;
-    }
+        class Boxes {
 
-    public boolean isDebug() {
-        return debug;
-    }
+        private String name1;
 
-    public String getTitle() {
-        return title;
-    }
+        private String name2;
 
-    //    class boxes {
-//      To be for nested
-//    }
+        private String name3;
+
+        private String name4;
+
+        private Boxes() {}
+
+            public Boxes(String name1, String name2, String name3, String name4) {
+                this.name1 = name1;
+                this.name2 = name2;
+                this.name3 = name3;
+                this.name4 = name4;
+            }
+        }
 }

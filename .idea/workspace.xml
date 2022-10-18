@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa21450-c174-4cc6-9d13-898f271f9632" name="Changes" comment="yt guide to save">
+    <list default="true" id="bfa21450-c174-4cc6-9d13-898f271f9632" name="Changes" comment="config is loaded to string json deserialized and serialized">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ConfigTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ConfigTester.java" afterDir="false" />
     </list>
@@ -71,7 +71,7 @@
       <workItem from="1665736789026" duration="5541000" />
       <workItem from="1665743250900" duration="3547000" />
       <workItem from="1665751050497" duration="521000" />
-      <workItem from="1665757434882" duration="23245000" />
+      <workItem from="1665757434882" duration="25158000" />
     </task>
     <task id="LOCAL-00001" summary="Gson dependency added, maven project set up">
       <created>1665737557088</created>
@@ -136,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666088168383</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="config is loaded to string json deserialized and serialized">
+      <created>1666091200714</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666091200714</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +169,7 @@
     <MESSAGE value="testConfig created + basic structure with entity example" />
     <MESSAGE value="debugger doesnt show object?" />
     <MESSAGE value="yt guide to save" />
-    <option name="LAST_COMMIT_MESSAGE" value="yt guide to save" />
+    <MESSAGE value="config is loaded to string json deserialized and serialized" />
+    <option name="LAST_COMMIT_MESSAGE" value="config is loaded to string json deserialized and serialized" />
   </component>
 </project>
