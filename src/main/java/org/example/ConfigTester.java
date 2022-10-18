@@ -13,8 +13,8 @@ public class ConfigTester {
     public static void main(String[] args) {
         System.out.println("Welcome to Gson!");
 
-        serializeConfigSimple();
-//        deserializeConfigSimple();
+//        serializeConfigSimple();
+        deserializeConfigSimple();
     }
 
     private static void serializeConfigSimple() {
@@ -34,10 +34,30 @@ public class ConfigTester {
 
         Gson gson = new Gson();
         String json = gson.toJson(userJson);
+        System.out.println(json);
 
     }
 
+
 }
+
+
+//    private static void deserializeConfigSimple() throws IOException {
+////        String userJson = "{'host':'0.0.0.0','port':8051,'debug':true,'title':'KBA - Dashboard'}";
+//        Reader reader = Files.newBufferedReader(Paths.get("plotly.json"));
+//
+//        Book book = gson.fromJson(reader, Book.class);
+//
+////        Gson gson = new Gson();
+////        String json = gson.toJson(userJson);
+//        System.out.println(book);
+//
+//        reader.close();
+//
+//    } catch (Exception ex) {
+//        ex.printStackTrace();
+//    }
+//}
 
 class Plotly {
     private String host;
@@ -45,10 +65,17 @@ class Plotly {
     private boolean debug;
     private String title;
 
+    public Plotly(){
+//        empty constructor
+    }
+
     public Plotly(String host, int port, boolean debug, String title) {
         this.host = host;
         this.port = port;
         this.debug = debug;
         this.title = title;
     }
+//    class boxes {
+//      To be for nested
+//    }
 }

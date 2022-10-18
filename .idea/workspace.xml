@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa21450-c174-4cc6-9d13-898f271f9632" name="Changes" comment="testConfig created + basic structure with entity example">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Plotly.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/testConfig.json" afterDir="false" />
+    <list default="true" id="bfa21450-c174-4cc6-9d13-898f271f9632" name="Changes" comment="debugger doesnt show object?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ConfigTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ConfigTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testConfig.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +64,7 @@
       <workItem from="1665736789026" duration="5541000" />
       <workItem from="1665743250900" duration="3547000" />
       <workItem from="1665751050497" duration="521000" />
-      <workItem from="1665757434882" duration="14034000" />
+      <workItem from="1665757434882" duration="20207000" />
     </task>
     <task id="LOCAL-00001" summary="Gson dependency added, maven project set up">
       <created>1665737557088</created>
@@ -118,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666005565215</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="debugger doesnt show object?">
+      <created>1666010203334</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666010203334</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +146,7 @@
     <MESSAGE value="reading with mapping" />
     <MESSAGE value="test: attribute addted for testing" />
     <MESSAGE value="testConfig created + basic structure with entity example" />
-    <option name="LAST_COMMIT_MESSAGE" value="testConfig created + basic structure with entity example" />
+    <MESSAGE value="debugger doesnt show object?" />
+    <option name="LAST_COMMIT_MESSAGE" value="debugger doesnt show object?" />
   </component>
 </project>
