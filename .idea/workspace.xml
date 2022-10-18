@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa21450-c174-4cc6-9d13-898f271f9632" name="Changes" comment="config is loaded to string json deserialized and serialized">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ConfigTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ConfigTester.java" afterDir="false" />
-    </list>
+    <list default="true" id="bfa21450-c174-4cc6-9d13-898f271f9632" name="Changes" comment="nested class created" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +68,7 @@
       <workItem from="1665736789026" duration="5541000" />
       <workItem from="1665743250900" duration="3547000" />
       <workItem from="1665751050497" duration="521000" />
-      <workItem from="1665757434882" duration="25158000" />
+      <workItem from="1665757434882" duration="26055000" />
     </task>
     <task id="LOCAL-00001" summary="Gson dependency added, maven project set up">
       <created>1665737557088</created>
@@ -143,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666091200714</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="nested class created">
+      <created>1666099053620</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666099053620</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +174,7 @@
     <MESSAGE value="debugger doesnt show object?" />
     <MESSAGE value="yt guide to save" />
     <MESSAGE value="config is loaded to string json deserialized and serialized" />
-    <option name="LAST_COMMIT_MESSAGE" value="config is loaded to string json deserialized and serialized" />
+    <MESSAGE value="nested class created" />
+    <option name="LAST_COMMIT_MESSAGE" value="nested class created" />
   </component>
 </project>
