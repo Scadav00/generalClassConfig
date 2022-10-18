@@ -10,54 +10,49 @@ import java.nio.file.Paths;
 import java.util.Map;
 
 public class ConfigTester {
-    public static void main(String[] args) {
-        System.out.println("Welcome to Gson!");
+    public static void main(String[] args) throws Exception {
+        String file = "/home/ds/IdeaProjects/GeneralClassConfig/src/main/java/org/example/Plotly.json";
+        String jsonConfig = readFileAsString(file);
+//        System.out.println(jsonConfig);
 
-//        serializeConfigSimple();
-        deserializeConfigSimple();
+        GsonBuilder builder = new GsonBuilder();
+        builder.setPrettyPrinting();
+
+        Gson gson = builder.create();
+//        deserialize
+        Plotly plotly = gson.fromJson(jsonConfig, Plotly.class);
+        System.out.println(plotly);
+
+//        serialize
+        jsonConfig = gson.toJson(plotly);
+        System.out.println(jsonConfig);
+
+
+//        GsonBuilder builder = new GsonBuilder();
+//        builder.setPrettyPrinting();
+//
+//        Gson gson = builder.create();
+//        Student student = gson.fromJson(jsonString, Student.class);
+//        System.out.println(student);
+//
+//        jsonString = gson.toJson(student);
+//        System.out.println(jsonString);
+//    }
+
+}
+    public static String readFileAsString(String file) throws Exception
+    {
+        return new String(Files.readAllBytes(Paths.get(file)));
     }
-
-    private static void serializeConfigSimple() {
-        Plotly plotly = new Plotly(
-                "0.0.0.0",
-                8051,
-                true,
-                "KBA- dashboard"
-        );
-
-        Gson gson = new Gson();
-        String json = gson.toJson(plotly);
-    }
-
-    private static void deserializeConfigSimple(){
-        String userJson = "{'host':'0.0.0.0','port':8051,'debug':true,'title':'KBA - Dashboard'}";
-
-        Gson gson = new Gson();
-        String json = gson.toJson(userJson);
-        System.out.println(json);
-
-    }
-
 
 }
 
-
-//    private static void deserializeConfigSimple() throws IOException {
-////        String userJson = "{'host':'0.0.0.0','port':8051,'debug':true,'title':'KBA - Dashboard'}";
-//        Reader reader = Files.newBufferedReader(Paths.get("plotly.json"));
-//
-//        Book book = gson.fromJson(reader, Book.class);
-//
-////        Gson gson = new Gson();
-////        String json = gson.toJson(userJson);
-//        System.out.println(book);
-//
-//        reader.close();
-//
-//    } catch (Exception ex) {
-//        ex.printStackTrace();
-//    }
-//}
+//    Plotly plotly = new Plotly(
+//            "0.0.0.0",
+//            8051,
+//            true,
+//            "KBA- dashboard"
+//    );
 
 class Plotly {
     private String host;
@@ -75,7 +70,24 @@ class Plotly {
         this.debug = debug;
         this.title = title;
     }
-//    class boxes {
+
+    public String getHost() {
+        return host;
+    }
+
+    public int getPort() {
+        return port;
+    }
+
+    public boolean isDebug() {
+        return debug;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    //    class boxes {
 //      To be for nested
 //    }
 }
