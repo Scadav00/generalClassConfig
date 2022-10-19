@@ -1,11 +1,4 @@
 {
-    "host": "0.0.0.0",
-    "port": 8051,
-    "debug": true,
-    "title": "KBA - Dashboard"
-}
-
-{ jadada
     "plotly": {
         "host": "0.0.0.0",
         "port": 8051,
@@ -19,3 +12,4 @@
         }
     }
 }
+
