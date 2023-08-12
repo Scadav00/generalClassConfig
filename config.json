@@ -3,7 +3,7 @@
     "host": "1.0.1.0",
     "port": 8051,
     "debug": true,
-    "box": "NBA - fashboard",
+    "title": "NBA - fashboard",
     "boxes": {
       "name1": "1",
       "name2": "2",
