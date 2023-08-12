@@ -1,9 +1,9 @@
 {
   "plotly": {
-    "host": "0.0.0.0",
+    "host": "1.0.1.0",
     "port": 8051,
     "debug": true,
-    "title": "KBA - Dashboard",
+    "box": "NBA - fashboard",
     "boxes": {
       "name1": "1",
       "name2": "2",
@@ -12,8 +12,8 @@
     }
   },
   "es": {
-    "host": "ernie",
-    "port": 9200,
+    "host": "dronie",
+    "port": 9100,
     "srv": {
       "index": "srv-*",
       "countQuery": "loglevel:ERROR OR WARN OR FATAL"
@@ -26,9 +26,9 @@
   "nas": {
     "test": "testing",
     "host": "",
-    "port": "5000",
-    "user": "",
-    "passwd": "",
+    "port": "5050",
+    "user": "dave",
+    "passwd": "scavnicky",
     "storage": {
       "limit_percentage": 90
     }
