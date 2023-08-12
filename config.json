@@ -28,7 +28,7 @@
     "host": "",
     "port": "5050",
     "user": "dave",
-    "passwd": "scavnicky",
+    "passwd": "lolo",
     "storage": {
       "limit_percentage": 90
     }
