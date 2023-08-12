@@ -1,6 +1,6 @@
 {
-    "host": "0.0.0.0",
-    "port": 8051,
+    "host": "0.0.0.1",
+    "port": 8011,
     "debug": true,
-    "title": "KBA - Dashboard"
+    "title": "NBA - fashboard"
 }
